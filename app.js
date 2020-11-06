@@ -11,7 +11,7 @@ require('./configDB');
 const port = process.env.PORT || 3000;
 // const uri = 'mongodb://127.0.0.1:27017/students';
 
-app.get('/students', (req, res) => {
+app.get('/', (req, res) => {
   modeldata
     .find()
     .then((result) =>
